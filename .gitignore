@@ -1,0 +1,12 @@
+# 敏感信息
+.env
+
+# 运行时生成
+memory/
+sessions/
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+Thumbs.db
