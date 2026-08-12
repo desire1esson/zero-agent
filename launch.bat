@@ -9,8 +9,26 @@ chcp 65001 >nul
 :: 检查 .env / Check .env
 if not exist ".env" (
     echo [错误/Error] .env 未找到 / not found
-    echo 请复制 .env.example → .env，填入 API key
-    echo Copy .env.example → .env, fill in your API key
+    echo.
+    echo 获取 API key: https://platform.deepseek.com
+    echo 然后复制 .env.example → .env，填入 key
+    echo.
+    echo Get API key: https://platform.deepseek.com
+    echo Then copy .env.example → .env, fill in your key
+    pause
+    exit /b 1
+)
+
+:: 检查 API key 不是占位符 / Check key is not placeholder
+findstr /C:"DEEPSEEK_API_KEY=***" .env >nul
+if not errorlevel 1 (
+    echo [错误/Error] API key 仍未填入 / still placeholder "***"
+    echo.
+    echo 获取 API key: https://platform.deepseek.com
+    echo 编辑 .env，把 *** 换成真实 key
+    echo.
+    echo Get API key: https://platform.deepseek.com
+    echo Edit .env, replace *** with your real key
     pause
     exit /b 1
 )
