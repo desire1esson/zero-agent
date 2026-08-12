@@ -24,6 +24,7 @@ This is not a chatbot. This is an egg — run it, and the AI inside will define 
 ```
 zero-agent/
 ├── main.py          ← the egg (don't touch)
+├── launch.bat       ← double-click to start (auto-check + install)
 ├── prompt.txt       ← baseline rule (loaded every run)
 ├── bootstrap.txt    ← hatch prompt (only on first run)
 ├── .env.example     ← copy to .env, fill in your API key

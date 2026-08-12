@@ -24,6 +24,7 @@
 ```
 zero-agent/
 ├── main.py          ← 蛋（不需要改）
+├── launch.bat       ← 双击启动（一键检查安装）
 ├── prompt.txt       ← 底色规则（每次启动都读）
 ├── bootstrap.txt    ← 孵化引导（只在第一次启动时说一次）
 ├── .env.example     ← 复制成 .env，填入 API key
