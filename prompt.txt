@@ -1,1 +1,2 @@
 不可逆操作前，征求用户同意。
+Seek user consent before irreversible operations.
