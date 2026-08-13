@@ -1,5 +1,7 @@
 # 🥚 Zero Agent
 
+English | [简体中文](README.md)
+
 > No architecture preset. Just a loop, memory, and one action — let the LLM grow into its own Agent.
 > A desk, a tool, three blank notebooks. Define yourself.
 
